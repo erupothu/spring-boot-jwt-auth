@@ -1,0 +1,49 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.vaya.jwt</groupId>
+  <artifactId>sb-jwt-authentication</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+ <parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.2.2.RELEASE</version>
+	</parent>
+	
+	<properties>
+		<project.build.sourceEncodeing>UTF-8</project.build.sourceEncodeing>
+		<project.reporting.outputEncodeing>UTF-8</project.reporting.outputEncodeing>
+		<java.version>1.8</java.version>
+		<!-- <spring-cloud.version>Finchley.SR1</spring-cloud.version> -->
+	</properties>
+	
+	<dependencies>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt</artifactId>
+			<version>0.9.1</version>
+		</dependency>
+
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+		<finalName>vaya-automations</finalName>
+	</build>
+</project>
